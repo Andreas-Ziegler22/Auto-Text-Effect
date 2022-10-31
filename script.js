@@ -17,3 +17,7 @@ function writeText() {
   }
   setTimeout(writeText, speed);
 }
+
+speedEL.addEventListener("input", (e) => {
+  speed = 300 / e.target.value;
+});
